@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHR || Design Hub - Portfolios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>RHR || Design Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolios.html">Portfolios</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>RHR || Design Hub Portfolios</h2>
+            <button id="uploadBtn">Upload Portfolio</button>
+        </div>
+    </section>
+
+    <section class="portfolio-list">
+        <div class="container" id="portfolioList">
+            <!-- Portfolios will be dynamically added here -->
+        </div>
+    </section>
+
+    <div id="portfolioFormModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Fill out your portfolio details</h2>
+            <form id="portfolioForm">
+                <div class="form-group">
+                    <label for="discordHandle">Discord Handle:</label>
+                    <input type="text" id="discordHandle" name="discordHandle" required>
+                </div>
+                <div class="form-group">
+                    <label for="portfolioTitle">Title:</label>
+                    <input type="text" id="portfolioTitle" name="portfolioTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="portfolioDescription">Description:</label>
+                    <textarea id="portfolioDescription" name="portfolioDescription" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="portfolioImage">Image URL:</label>
+                    <input type="url" id="portfolioImage" name="portfolioImage" placeholder="Paste image URL here" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RHR || Design Hub</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
